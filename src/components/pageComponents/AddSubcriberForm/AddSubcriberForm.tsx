@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import { Header, Wrapper } from "./AddSubcriberForm.styles";
@@ -110,7 +108,7 @@ const AddSubscriberForm = ({
         onSubmit={handleSubmit}
         validateOnMount
       >
-        {({ isSubmitting, status, isValid }) => {
+        {({ isSubmitting, isValid }) => {
           return (
             <Form>
               <Field

@@ -9,10 +9,7 @@ import UserData from "../UserData/UserData";
 import AlertDialog from "../../commonComponents/AlertDialog/AlertDialog";
 import { Subscriber } from "../../../types/Subscriber";
 import { useDispatch } from "react-redux";
-import {
-  deleteSubscriber,
-  fetchSubscribers,
-} from "../../../redux/subscribersSlice";
+import { deleteSubscriber } from "../../../redux/subscribersSlice";
 import { AppDispatch } from "../../../redux/store";
 
 type TableRowWrapperProps = {
@@ -27,10 +24,6 @@ type TableRowWrapperProps = {
 const TableRowWrapper = ({
   subscriber,
   setStatusElement,
-  sortField = "email",
-  orderdirection = "asc",
-  page = 1,
-  pagesize = 10,
 }: TableRowWrapperProps) => {
   const dispatch = useDispatch<AppDispatch>();
   const { EmailAddress, Name } = subscriber;
