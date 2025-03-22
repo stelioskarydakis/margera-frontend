@@ -86,6 +86,10 @@ const SubcriberTable = () => {
               key={subscriber.EmailAddress}
               subscriber={subscriber}
               setStatusElement={setStatusElement}
+              sortField={sortField || "email"}
+              orderdirection={orderdirection || "asc"}
+              page={1}
+              pagesize={pagesize || 10}
             />
           ))
         )}
