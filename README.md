@@ -38,3 +38,31 @@ Ensure you have the following installed on your machine:
    ```bash
    git clone git@github.com:stelioskarydakis/margera-frontend.git
    ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd margera-frontend
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+
+   ```
+
+4. Create an .env file
+
+   VITE_API_BASE_URL=http://localhost:8080
+
+5. Start the server:
+
+   ```bash
+   npm run dev
+
+   ```
+
+6. Visit in a browser at
+
+   http://localhost:5174/
