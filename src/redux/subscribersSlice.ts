@@ -62,7 +62,7 @@ export const addSubscriberAsync = createAsyncThunk(
   "subscribers/addSubscriberAsync",
   async (subscriber: { name: string; email: string }, { rejectWithValue }) => {
     try {
-      const response = await fetch("${API_BASE_URL}/api/subscribers", {
+      const response = await fetch(`${API_BASE_URL}/api/subscribers`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
